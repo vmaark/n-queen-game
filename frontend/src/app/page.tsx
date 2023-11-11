@@ -19,7 +19,7 @@ const Chessboard = () => {
     <div className="flex flex-wrap">
       {rows.map((_, rowIndex) => {
         return (
-          <div>
+          <div key={rowIndex}>
             {cols.map((_, colIndex) => {
               const isEvenRow = rowIndex % 2 === 0;
               const isEvenCol = colIndex % 2 === 0;
